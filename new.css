@@ -34,7 +34,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 main,
@@ -4575,16 +4574,25 @@ img {
     padding: 120px 30px 0;
   }
 
+  .header-wrap h1 {
+    font-size: 2.7rem;
+  }
+
   .bwp-header .sub-header {
     margin-bottom: 0;
   }
 
   .demo-item {
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   .bwp-header {
-    height: 400px;
+    height: 300px;
+  }
+
+  .demo-item > h5 {
+    margin-bottom: 2px;
+    color: #555;
   }
 }
 
@@ -4595,6 +4603,10 @@ img {
     border-bottom: 1px solid #eceeef;
 
     position: relative;
+  }
+
+  .header-wrap h1 {
+    font-size: 3.5rem;
   }
 
   .hero .parallax {
@@ -4671,46 +4683,6 @@ img {
   border-top: 1px solid #eceeef;
 
   padding-bottom: 5rem;
-}
-
-footer {
-  display: -webkit-box;
-
-  display: -ms-flexbox;
-
-  display: flex;
-
-  -webkit-box-orient: vertical;
-
-  -webkit-box-direction: normal;
-
-  -ms-flex-direction: column;
-
-  flex-direction: column;
-
-  -webkit-box-align: center;
-
-  -ms-flex-align: center;
-
-  align-items: center;
-
-  -webkit-box-pack: center;
-
-  -ms-flex-pack: center;
-
-  justify-content: center;
-
-  height: 700px;
-
-  width: 100%;
-
-  text-align: center;
-}
-
-footer h2 {
-  font-size: 2.5rem;
-
-  color: #fff;
 }
 
 .flex-column {
