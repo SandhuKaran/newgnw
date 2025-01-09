@@ -4432,7 +4432,7 @@ img {
 .grid-item {
   text-align: center;
 
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
 }
 
 .section-header {
@@ -4497,7 +4497,7 @@ img {
 }
 
 .bwp-header .header-wrap {
-  padding: 80px 30px 0;
+  padding: 180px 30px 0;
 }
 
 .bwp-header .sub-header {
@@ -4572,7 +4572,7 @@ img {
 
 @media (max-width: 991px) {
   .bwp-header .header-wrap {
-    padding: 40px 30px 0;
+    padding: 120px 30px 0;
   }
 
   .bwp-header .sub-header {
