@@ -1960,7 +1960,7 @@ p.dropcap span.first-letter {
 .mobile-button:before,
 .mobile-button:after,
 .mobile-button span {
-  background-color: #222;
+  background-color: #ccc;
   -webkit-transition: all ease 0.238s;
   -moz-transition: all ease 0.238s;
   transition: all ease 0.238s;
