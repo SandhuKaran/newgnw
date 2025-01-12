@@ -196,11 +196,11 @@
                           ></div>
                           <!-- <div id="gmap" class="wprt-gmap"></div> -->
                           <!-- <div
-                            class="wprt-spacer"
-                            data-desktop="50"
-                            data-mobi="40"
-                            data-smobi="40"
-                          ></div> -->
+                    class="wprt-spacer"
+                    data-desktop="50"
+                    data-mobi="40"
+                    data-smobi="40"
+                  ></div> -->
                         </div>
                         <!-- /.col-md-12 -->
 
@@ -221,10 +221,7 @@
                             <ul class="style-2">
                               <li class="address">
                                 <span class="hl">Address:</span>
-                                <span class="text"
-                                  >42 Hewson Crescent, Georgetown, L7G2N9, ON,
-                                  CA</span
-                                >
+                                <span class="text">Georgetown, ON, CA</span>
                               </li>
                               <li class="phone">
                                 <span class="hl">Phone:</span>
@@ -245,12 +242,12 @@
                             data-smobi="30"
                           ></div>
                         </div>
-                        <!-- /.col-md-4 -->
+                        <!-- /.col-md-5 -->
 
                         <div class="col-md-7">
                           <h4 class="margin-bottom-15">REQUEST A QUOTE</h4>
                           <form
-                            action="https://formspree.io/f/xwpevnqp"
+                            action="https://formspree.io/f/xpwwkbjb"
                             method="post"
                             class="contact-form wpcf7-form"
                           >
@@ -290,6 +287,27 @@
                                   placeholder="Phone Number"
                                 />
                               </span>
+
+                              <!-- New Dropdown Field -->
+                              <span class="wpcf7-form-control-wrap subject">
+                                <select
+                                  name="plan"
+                                  id="plan"
+                                  tabindex="5"
+                                  class="wpcf7-form-control"
+                                >
+                                  <option value="" disabled selected>
+                                    Select a Plan
+                                  </option>
+                                  <option value="basic">Basic Plan</option>
+                                  <option value="premium">Premium Plan</option>
+                                  <option value="ultimate">
+                                    Ultimate Plan
+                                  </option>
+                                </select>
+                              </span>
+                              <!-- End of New Dropdown Field -->
+
                               <span class="wpcf7-form-control-wrap subject">
                                 <input
                                   type="text"
@@ -302,10 +320,11 @@
                                   required
                                 />
                               </span>
+
                               <span class="wpcf7-form-control-wrap message">
                                 <textarea
                                   name="message"
-                                  tabindex="5"
+                                  tabindex="6"
                                   cols="40"
                                   rows="10"
                                   class="wpcf7-form-control wpcf7-textarea"
@@ -325,11 +344,10 @@
                             </div>
                           </form>
                         </div>
-                        <!-- /.col-md-8 -->
+                        <!-- /.col-md-7 -->
 
                         <div class="col-md-12">
                           <div id="gmap" class="mgt50"></div>
-
                           <div
                             class="wprt-spacer"
                             data-desktop="80"
@@ -461,5 +479,18 @@
     ></script>
     <script type="text/javascript" src="assets/js/gmap3.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Parse URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const plan = params.get("plan"); // e.g. "basic", "standard", "premium"
+
+        // If `plan` is in the URL, set the dropdown's value
+        if (plan) {
+          const planSelect = document.getElementById("plan");
+          planSelect.value = plan;
+        }
+      });
+    </script>
   </body>
 </html>
