@@ -4895,3 +4895,8 @@ h1 {
   font-size: 3.142em;
 }
 
+@media (min-width: 769px) {
+  .landscaping-label-mobile {
+    display: none !important;
+  }
+}
