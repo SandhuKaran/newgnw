@@ -117,7 +117,11 @@
                 <nav id="main-nav" class="main-nav">
                   <ul class="menu">
                     <li class="menu-item">
-                      <a href="lawnmain.html">Home</a>
+                      <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="menu-item">
+                      <a href="lawn-portfolio.html">Portfolio</a>
                     </li>
 
                     <li class="menu-item current-menu-item">
@@ -209,7 +213,9 @@
                       <!-- /.col-md-12 -->
 
                       <div class="col-md-4">
-                        <div class="wprt-image-box left clearfix text-center">
+                        <div
+                          class="wprt-image-box left clearfix text-center pricing-box"
+                        >
                           <div class="content-wrap">
                             <h2>BASIC PLAN</h2>
 
@@ -243,7 +249,9 @@
                       <!-- /.col-md-4 -->
 
                       <div class="col-md-4">
-                        <div class="wprt-image-box left clearfix text-center">
+                        <div
+                          class="wprt-image-box left clearfix text-center pricing-box"
+                        >
                           <div class="content-wrap">
                             <h2>PREMIUM PLAN</h2>
 
@@ -279,7 +287,9 @@
                       <!-- /.col-md-4 -->
 
                       <div class="col-md-4">
-                        <div class="wprt-image-box left clearfix text-center">
+                        <div
+                          class="wprt-image-box left clearfix text-center pricing-box"
+                        >
                           <div class="content-wrap">
                             <h2>ULTIMATE PLAN</h2>
 
@@ -404,7 +414,8 @@
             <div class="bottom-bar-inner-wrap">
               <div class="bottom-bar-content">
                 <div id="copyright">
-                  CONSTRUCTION TEMPLATE BY BLOGWP . DESIGNED BY KARAN .
+                  Copyright &copy; <span id="year"></span> | Greenworks Lawncare
+                  and Landscaping Inc. | All Rights Reserved.
                 </div>
                 <!-- /#copyright -->
               </div>
@@ -437,5 +448,8 @@
     <script type="text/javascript" src="assets/js/flexslider.js"></script>
     <script type="text/javascript" src="assets/js/cube.portfolio.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>

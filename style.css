@@ -1906,7 +1906,7 @@ p.dropcap span.first-letter {
 }
 #main-nav-mobi ul > li > a {
   font-weight: 500;
-  color: #333;
+  color: #aaa;
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -4076,4 +4076,87 @@ img {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.pricing-box {
+  /* Outline or border */
+  border: 1.5px solid #006400;
+  border-radius: 5px; /* optional rounded corners */
+
+  /* Spacing */
+  margin-bottom: 30px; /* spacing below each box */
+  padding: 20px; /* space inside the box */
+
+  /* Optional box shadow */
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
+  background-color: #fff; /* ensure a white background if needed */
+}
+
+/* Page Layout */
+.portfolio-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.page-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.intro-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Masonry Container */
+.masonry {
+  /* Creates a multi-column layout (a “masonry” effect) */
+  column-count: 3; /* Number of columns on larger screens */
+  column-gap: 1.5rem; /* Space between columns */
+  orphans: 1;
+  widows: 1;
+}
+.masonry-item {
+  /* The items flow into columns */
+  margin-bottom: 1.5rem;
+  break-inside: avoid; /* Avoid splitting item between columns */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+  /* Optional shadow for a “card” feel */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive video embed */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 991px) {
+  .masonry {
+    column-count: 2; /* Fewer columns on medium screens */
+  }
+}
+@media (max-width: 600px) {
+  .masonry {
+    column-count: 1; /* Single column on small screens */
+  }
 }

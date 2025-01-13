@@ -710,7 +710,8 @@
             <div class="bottom-bar-inner-wrap">
               <div class="bottom-bar-content">
                 <div id="copyright">
-                  CONSTRUCTION TEMPLATE BY BLOGWP . DESIGNED BY KARAN .
+                  Copyright &copy; <span id="year"></span> | Greenworks Lawncare
+                  and Landscaping Inc. | All Rights Reserved.
                 </div>
                 <!-- /#copyright -->
               </div>
@@ -743,5 +744,9 @@
     <script type="text/javascript" src="assets/js/flexslider.js"></script>
     <script type="text/javascript" src="assets/js/cube.portfolio.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
+
 </html>
