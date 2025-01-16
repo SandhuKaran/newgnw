@@ -4383,7 +4383,7 @@ img {
 
   opacity: 0;
 
-  background: hsla(0, 0%, 100%, 0.85);
+  background: hsla(0, 0%, 100%, 0.5);
 }
 
 .browser.browser-hover .browser-content > * {
@@ -4409,7 +4409,8 @@ img {
 .grid-item {
   text-align: center;
 
-  margin-bottom: 0rem;
+  margin-bottom: -2rem;
+  margin-top: -2.8rem;
 }
 
 .section-header {
@@ -4468,7 +4469,7 @@ img {
 .bwp-header {
   height: 540px;
 
-  background: url(assets/img/home2.jpg) no-repeat center center;
+  background: url(assets/img/home2.webp) no-repeat center center;
 
   text-align: center;
 }
@@ -4900,3 +4901,17 @@ h1 {
     display: none !important;
   }
 }
+
+@media (max-width: 769px) {
+  .headings {
+    visibility: hidden;
+  }
+
+  @media (max-width: 769px) {
+    .photos-cont {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+

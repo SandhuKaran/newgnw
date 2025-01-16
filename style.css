@@ -4160,3 +4160,43 @@ img {
     column-count: 1; /* Single column on small screens */
   }
 }
+
+.fade-in-heading {
+  /* Start invisible */
+  opacity: 0;
+  /* Optional: slightly shift upward so it slides in a bit */
+  transform: translateY(20px);
+  /* Apply the animation */
+  animation: fadeSlideIn 1s forwards ease-in-out;
+  /* 
+    1s = duration
+    forwards = keep the final state
+    ease-in-out = easing
+  */
+}
+
+/* Keyframes for fade + slide in */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-tiles {
+  /* Start invisible */
+  opacity: 0;
+  /* Optional: slightly shift upward so it slides in a bit */
+  transform: translateY(20px);
+  /* Apply the animation */
+  animation: fadeSlideIn 2s forwards ease-in-out;
+  /* 
+    1s = duration
+    forwards = keep the final state
+    ease-in-out = easing
+  */
+}
