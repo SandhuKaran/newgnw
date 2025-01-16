@@ -562,6 +562,31 @@
       </div>
     </footer>
 
+    <!-- Bottom -->
+    <div id="bottom" class="clearfix style-1">
+      <div id="bottom-bar-inner" class="wprt-container">
+        <div class="bottom-bar-inner-wrap">
+          <div class="bottom-bar-content">
+            <div id="copyright">
+              Copyright &copy; <span id="year"></span> | Greenworks Lawncare and
+              Landscaping Inc. | All Rights Reserved.
+            </div>
+            <!-- /#copyright -->
+          </div>
+          <!-- /.bottom-bar-content -->
+
+          <div class="bottom-bar-menu">
+            <ul class="bottom-nav">
+              <li><a href="#/">HISTORY</a></li>
+              <li><a href="#/">FAQ</a></li>
+              <li><a href="#/">EVENTS</a></li>
+            </ul>
+          </div>
+          <!-- /.bottom-bar-menu -->
+        </div>
+      </div>
+    </div>
+
     <!-- Javascript -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
@@ -619,5 +644,8 @@
       type="text/javascript"
       src="includes/rev-slider/js/extensions/revolution.extension.video.min.js"
     ></script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
