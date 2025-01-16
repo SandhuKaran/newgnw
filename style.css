@@ -4018,7 +4018,7 @@ body.page #main-content {
 }
 
 .service-image {
-  height: 280px; /* Adjust this value to your preference */
+  height: 240px; /* Adjust this value to your preference */
   overflow: hidden; /* Ensure images don't overflow the fixed height */
 }
 
