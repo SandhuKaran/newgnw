@@ -4376,34 +4376,36 @@ img {
   color: #55595c;
 }
 
-.browser.browser-hover .browser-content {
-  -webkit-transition: all 0.25s ease;
+@media (min-width: 768px) {
+  .browser.browser-hover .browser-content {
+    -webkit-transition: all 0.25s ease;
 
-  transition: all 0.25s ease;
+    transition: all 0.25s ease;
 
-  opacity: 0;
+    opacity: 0;
 
-  background: hsla(0, 0%, 100%, 0.5);
-}
+    background: hsla(0, 0%, 100%, 0.5);
+  }
 
-.browser.browser-hover .browser-content > * {
-  -webkit-transition: all 0.25s ease;
+  .browser.browser-hover .browser-content > * {
+    -webkit-transition: all 0.25s ease;
 
-  transition: all 0.25s ease;
+    transition: all 0.25s ease;
 
-  -webkit-transform: translate3d(0, -0.5rem, 0);
+    -webkit-transform: translate3d(0, -0.5rem, 0);
 
-  transform: translate3d(0, -0.5rem, 0);
-}
+    transform: translate3d(0, -0.5rem, 0);
+  }
 
-.browser.browser-hover:hover .browser-content {
-  opacity: 1;
-}
+  .browser.browser-hover:hover .browser-content {
+    opacity: 1;
+  }
 
-.browser.browser-hover:hover .browser-content > * {
-  -webkit-transform: translateZ(0);
+  .browser.browser-hover:hover .browser-content > * {
+    -webkit-transform: translateZ(0);
 
-  transform: translateZ(0);
+    transform: translateZ(0);
+  }
 }
 
 .grid-item {
@@ -4914,4 +4916,3 @@ h1 {
     }
   }
 }
-
