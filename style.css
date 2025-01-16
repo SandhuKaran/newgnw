@@ -3243,16 +3243,6 @@ body.page #main-content {
   position: relative;
   padding-bottom: 20px;
 }
-#sidebar .widget.widget.widget_information ul.style-2:after,
-#footer-widgets .widget.widget_information ul.style-2:after {
-  width: 193px;
-  height: 95px;
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background: url(assets/img/map-small.png) no-repeat center center;
-}
 
 /* Re-style Widgets for footer */
 #footer-widgets .widget {
