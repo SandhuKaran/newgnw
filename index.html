@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10820369667">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=AW-10820369667"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'AW-10820369667');
-</script>
+    gtag("config", "AW-10820369667");
+  </script>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -20,28 +23,95 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://themes247.net/html5/construction/landing/styles.min.css"
-    /> -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="new.css" />
 
-    <!-- Favicon and touch icons  -->
     <link
       rel="shortcut icon"
       href="assets/img/favicon.ico"
       type="image/x-icon"
     />
 
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <style>
+      /* 1. STICKY MOBILE BAR */
+      .sticky-mobile-bar {
+        display: none; /* Hidden on desktop */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #ffffff;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+      }
+
+      .sticky-btn {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none !important;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn-call-mobile {
+        background-color: #ffffff;
+        color: #2e7d32; /* Green text */
+        border-top: 3px solid #2e7d32;
+      }
+
+      .btn-quote-mobile {
+        background-color: #2e7d32; /* Green background */
+        color: #ffffff !important; /* White text */
+      }
+
+      /* 2. FLOATING TESTIMONIALS SECTION */
+      .floating-section {
+        position: relative;
+        z-index: 20;
+        margin-top: -60px; /* Pulls the section up to overlap */
+        margin-bottom: 60px;
+        padding: 0 15px;
+      }
+
+      .floating-card {
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15); /* Drop shadow */
+        padding: 50px 30px;
+        text-align: center;
+      }
+
+      .floating-card h2 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      /* MOBILE ADJUSTMENTS */
+      @media only screen and (max-width: 767px) {
+        /* Show sticky bar */
+        .sticky-mobile-bar {
+          display: flex;
+        }
+        /* Push body content up so it doesn't hide behind bar */
+        body {
+          padding-bottom: 60px;
+        }
+        /* Remove negative margin on mobile to prevent layout issues */
+        .floating-section {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+    </style>
   </head>
   <body class="front-page no-sidebar site-layout-full-width header-style-5">
     <div id="site-header-wrap">
-      <!-- Top Bar -->
       <div id="top-bar" class="style-2">
         <div id="top-bar-inner" class="container">
           <div class="top-bar-inner-wrap">
@@ -56,21 +126,15 @@
                 </span>
               </div>
             </div>
-            <!-- /.top-bar-socials -->
-
             <div class="top-bar-content">
               <span style="color: #bbb" id="top-bar-text">
-                <i class="fa fa-phone-square"></i>+1 705-500-9000
-                <i class="fa fa-envelope"></i>info@gnwlandscaping.ca </span
-              ><!-- /#top-bar-text -->
+                <i class="fa fa-phone-square"></i><a href="tel:+17055009000" style="color: inherit; text-decoration: none;">+1 705-500-9000</a>
+                <i class="fa fa-envelope"></i>info@gnwlandscaping.ca
+              </span>
+              </div>
             </div>
-            <!-- /.top-bar-content -->
-          </div>
         </div>
       </div>
-      <!-- /#top-bar -->
-
-      <!-- Header -->
       <header id="site-header" class="header-front-page style-5">
         <div id="site-header-inner" class="container">
           <div class="wrap-inner">
@@ -92,11 +156,7 @@
                 </a>
               </div>
             </div>
-            <!-- /#site-logo -->
-
             <div class="mobile-button"><span></span></div>
-            <!-- //mobile menu button -->
-
             <nav id="main-nav" class="main-nav">
               <ul class="menu">
                 <li class="menu-item">
@@ -124,15 +184,10 @@
                 </li>
               </ul>
             </nav>
-            <!-- /#main-nav -->
-          </div>
+            </div>
         </div>
-        <!-- /#site-header-inner -->
-      </header>
-      <!-- /#site-header -->
-    </div>
-    <!-- /#site-header-wrap -->
-
+        </header>
+      </div>
     <section class="demos" id="demos">
       <div class="bwp-header">
         <div class="header-wrap font-family-heading">
@@ -157,14 +212,12 @@
                   alt="Landscaping"
                 />
 
-                <!-- Hover content for desktop (remains as is) -->
                 <div class="browser-content">
                   <h2 style="font-weight: 200">
                     <a style="color: #fff" href="#">LANDSCAPING</a>
                   </h2>
                 </div>
 
-                <!-- Clickable link overlay -->
                 <a target="_blank" href="landmain.html"></a>
               </div>
             </div>
@@ -182,14 +235,12 @@
                   alt="Landscaping"
                 />
 
-                <!-- Hover content for desktop (remains as is) -->
                 <div class="browser-content">
                   <h2 style="font-weight: 200">
                     <a style="color: #fff" href="#">LAWN MAINTENANCE</a>
                   </h2>
                 </div>
 
-                <!-- Clickable link overlay -->
                 <a target="_blank" href="lawnmain.html"></a>
               </div>
             </div>
@@ -198,7 +249,114 @@
       </div>
     </section>
 
-    <!-- WHY CHOOSE US -->
+    <div class="container floating-section">
+      <div class="floating-card">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 style="color: #4b4b4b; font-weight: 500">WHAT LOCALS SAY</h2>
+            <div class="wprt-lines style-1 custom-3">
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+            </div>
+            <div
+              class="wprt-spacer"
+              data-desktop="30"
+              data-mobi="20"
+              data-smobi="20"
+            ></div>
+
+            <div
+              class="wprt-testimonials has-outline arrow-style-2 has-arrows arrow60 arrow-light"
+              data-layout="slider"
+              data-column="1"
+              data-column2="1"
+              data-column3="1"
+              data-column4="1"
+              data-gaph="0"
+              data-gapv="0"
+            >
+              <div id="testimonials-wrap" class="cbp">
+                <div class="cbp-item">
+                  <div class="customer clearfix">
+                    <div class="inner">
+                      <a
+                        target="_blank"
+                        href="https://maps.app.goo.gl/nCbny9K8JTAeZzqm8"
+                      >
+                        <div class="image">
+                          <img
+                            src="assets/img/testimonials/1.webp"
+                            alt="image"
+                          />
+                        </div>
+                        <h4 class="name" style="color: #4b4b4b">
+                          ZUBAIR AHMED
+                        </h4>
+                        <blockquote style="color: black" class="whisper">
+                          I recently had the pleasure of working with Greenworks
+                          Landscaping Inc... The sod was laid seamlessly...
+                          flawless, lush green carpet.
+                        </blockquote>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cbp-item">
+                  <div class="customer clearfix">
+                    <div class="inner">
+                      <a
+                        target="_blank"
+                        href="https://maps.app.goo.gl/stC738QJL3d66bCX6"
+                      >
+                        <div class="image">
+                          <img
+                            src="assets/img/testimonials/2.webp"
+                            alt="image"
+                          />
+                        </div>
+                        <h4 class="name" style="color: #4b4b4b">
+                          ZACHARY COCCIARDI
+                        </h4>
+                        <blockquote style="color: black" class="whisper">
+                          Amazing work and great pricing. They were in and out
+                          in a few hours. Easy to contact via text and always
+                          responded.
+                        </blockquote>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cbp-item">
+                  <div class="customer clearfix">
+                    <div class="inner">
+                      <a
+                        target="_blank"
+                        href="https://maps.app.goo.gl/njnBdmmhWrZ71x3E7"
+                      >
+                        <div class="image">
+                          <img
+                            src="assets/img/testimonials/3.webp"
+                            alt="image"
+                          />
+                        </div>
+                        <h4 class="name" style="color: #4b4b4b">
+                          BARRY OLSON
+                        </h4>
+                        <blockquote style="color: black" class="whisper">
+                          Just completed my third job with Greenworks this year.
+                          Two patio installations and a large sod job. All three
+                          projects look fantastic months later.
+                        </blockquote>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="wprt-section">
       <div class="container">
         <div class="row">
@@ -282,8 +440,6 @@
               </div>
             </div>
           </div>
-          <!-- /.col-md-6 -->
-
           <div class="col-md-6">
             <div
               class="wprt-spacer"
@@ -324,8 +480,6 @@
               customized solutions that meet their needs and preferences.
             </div>
           </div>
-          <!-- /.col-md-6 -->
-
           <div class="col-md-12">
             <div
               class="wprt-spacer"
@@ -334,174 +488,10 @@
               data-smobi="60"
             ></div>
           </div>
-          <!-- /.col-md-12 -->
+          </div>
         </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-    </section>
+      </section>
 
-    <!-- TESTIMONIALS -->
-    <!-- TESTIMONIALS -->
-    <section class="wprt-section testimonials">
-      <div class="container">
-        <div class="">
-          <div class="col-md-12">
-            <div
-              class="wprt-spacer"
-              data-desktop="70"
-              data-mobi="60"
-              data-smobi="60"
-            ></div>
-          </div>
-          <!-- /.col-md-12 -->
-
-          <div class="col-md-12">
-            <h2 style="color: #4b4b4b; font-weight: 500">TESTIMONIALS</h2>
-            <div class="wprt-lines style-1 custom-3">
-              <div class="line-1"></div>
-              <div class="line-2"></div>
-            </div>
-            <div
-              class="wprt-spacer"
-              data-desktop="50"
-              data-mobi="40"
-              data-smobi="40"
-            ></div>
-
-            <div
-              class="wprt-testimonials has-outline arrow-style-2 has-arrows arrow60 arrow-light"
-              data-layout="slider"
-              data-column="1"
-              data-column2="1"
-              data-column3="1"
-              data-column4="1"
-              data-gaph="0"
-              data-gapv="0"
-            >
-              <div id="testimonials-wrap" class="cbp">
-                <div class="cbp-item">
-                  <div class="customer clearfix">
-                    <div class="inner">
-                      <a
-                        target="_blank"
-                        href="https://maps.app.goo.gl/nCbny9K8JTAeZzqm8"
-                      >
-                        <div class="image">
-                          <img
-                            src="assets/img/testimonials/1.webp"
-                            alt="image"
-                          />
-                        </div>
-                        <h4 class="name" style="color: #4b4b4b">
-                          ZUBAIR AHMED
-                        </h4>
-
-                        <blockquote style="color: black" class="whisper">
-                          I recently had the pleasure of working with Greenworks
-                          Landscaping Inc. for a sodding project, and I couldn't
-                          be more satisfied with the results! From start to
-                          finish, their team demonstrated exceptional attention
-                          to detail and professionalism. The sod was laid
-                          seamlessly, and the edges were meticulously aligned,
-                          creating a flawless, lush green carpet that
-                          transformed my yard. What impressed me the most was
-                          their commitment to quality. They didn't cut any
-                          corners and made sure to address all my questions and
-                          concerns throughout the process. Their expertise was
-                          evident, and they offered valuable advice on how to
-                          maintain my new lawn to keep it looking pristine. I
-                          highly recommend Greenworks Landscaping Inc. for
-                          anyone in need of sodding services. Their attention to
-                          detail, professionalism, and dedication to customer
-                          satisfaction are truly commendable. Thank you for an
-                          outstanding job!
-                        </blockquote>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.cbp-item -->
-
-                <div class="cbp-item">
-                  <div class="customer clearfix">
-                    <div class="inner">
-                      <a
-                        target="_blank"
-                        href="https://maps.app.goo.gl/stC738QJL3d66bCX6"
-                      >
-                        <div class="image">
-                          <img
-                            src="assets/img/testimonials/2.webp"
-                            alt="image"
-                          />
-                        </div>
-                        <h4 class="name" style="color: #4b4b4b">
-                          ZACHARY COCCIARDI
-                        </h4>
-
-                        <blockquote style="color: black" class="whisper">
-                          Amazing work and great pricing. They were in and out
-                          in a few hours. Easy to contact via text and always
-                          responded. Will use these guys for more work that I
-                          need done.
-                        </blockquote>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.cbp-item -->
-
-                <div class="cbp-item">
-                  <div class="customer clearfix">
-                    <div class="inner">
-                      <a
-                        target="_blank"
-                        href="https://maps.app.goo.gl/njnBdmmhWrZ71x3E7"
-                      >
-                        <div class="image">
-                          <img
-                            src="assets/img/testimonials/3.webp"
-                            alt="image"
-                          />
-                        </div>
-                        <h4 class="name" style="color: #4b4b4b">BARRY OLSON</h4>
-
-                        <blockquote style="color: black" class="whisper">
-                          Just completed my third job with Greenworks this year.
-                          Two patio installations and a large sod job. All three
-                          projects look fantastic months later. The team works
-                          hard and cleans up the site perfectly. Fair prices and
-                          quality work!!
-                        </blockquote>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- /.cbp-item -->
-              </div>
-              <!-- /#testimonials-wrap -->
-            </div>
-            <!-- /.wprt-testimonials -->
-          </div>
-          <!-- /.col-md-12 -->
-
-          <div class="col-md-12">
-            <div
-              class="wprt-spacer"
-              data-desktop="70"
-              data-mobi="60"
-              data-smobi="60"
-            ></div>
-          </div>
-          <!-- /.col-md-12 -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-    </section>
-
-    <!-- Footer -->
     <footer id="footer">
       <div id="footer-widgets" class="container style-1">
         <div class="">
@@ -540,7 +530,7 @@
                 </li>
                 <li class="phone clearfix">
                   <span class="hl">Phone:</span>
-                  <span class="text">+1 (705) 500-9000</span>
+                  <span class="text"><a href="tel:+17055009000" style="color: inherit; text-decoration: none;">+1 (705) 500-9000</a></span>
                 </li>
                 <li class="email clearfix">
                   <span class="hl">E-mail:</span>
@@ -572,19 +562,15 @@
       </div>
     </footer>
 
-    <!-- Bottom -->
     <div id="bottom" class="clearfix style-1">
       <div id="bottom-bar-inner" class="wprt-container">
         <div class="bottom-bar-inner-wrap">
           <div class="bottom-bar-content">
             <div id="copyright">
-              Copyright &copy; <span id="year"></span> | Greenworks Lawncare and
+              Copyright © <span id="year"></span> | Greenworks Lawncare and
               Landscaping Inc. | All Rights Reserved.
             </div>
-            <!-- /#copyright -->
-          </div>
-          <!-- /.bottom-bar-content -->
-
+            </div>
           <div class="bottom-bar-menu">
             <ul class="bottom-nav">
               <li><a href="#/">HISTORY</a></li>
@@ -592,12 +578,20 @@
               <li><a href="#/">EVENTS</a></li>
             </ul>
           </div>
-          <!-- /.bottom-bar-menu -->
-        </div>
+          </div>
       </div>
     </div>
 
-    <!-- Javascript -->
+    <div class="sticky-mobile-bar">
+      <a href="tel:+17055009000" class="sticky-btn btn-call-mobile">
+        <i class="fa fa-phone" style="margin-right: 8px"></i> Call Now
+      </a>
+      <a href="contact.html" class="sticky-btn btn-quote-mobile">
+        <i class="fa fa-pencil-square-o" style="margin-right: 8px"></i> Get
+        Quote
+      </a>
+    </div>
+
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/animsition.js"></script>
@@ -607,7 +601,6 @@
     <script type="text/javascript" src="assets/js/cube.portfolio.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 
-    <!-- Revolution Slider -->
     <script
       type="text/javascript"
       src="includes/rev-slider/js/jquery.themepunch.tools.min.js"
@@ -617,7 +610,6 @@
       src="includes/rev-slider/js/jquery.themepunch.revolution.min.js"
     ></script>
     <script type="text/javascript" src="assets/js/rev-slider.js"></script>
-    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->
     <script
       type="text/javascript"
       src="includes/rev-slider/js/extensions/revolution.extension.actions.min.js"
